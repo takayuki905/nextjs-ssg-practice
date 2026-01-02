@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "serve": "serve out",
+    "preview": "pnpm build && pnpm serve"
   },
   "dependencies": {
     "@prisma/client": "^7.2.0",
@@ -23,6 +25,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "prisma": "^7.2.0",
+    "serve": "^14.2.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
