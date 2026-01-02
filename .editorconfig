@@ -1,0 +1,16 @@
+# http://editorconfig.org
+root = true
+
+[*]
+indent_style = space          # インデントはスペース
+indent_size = 2               # インデント幅は 2
+end_of_line = lf              # 改行コードは LF
+charset = utf-8               # 文字コードは UTF-8
+trim_trailing_whitespace = true # 行末の空白を削除
+insert_final_newline = true    # ファイル末尾に空行を入れる
+
+[*.md]
+trim_trailing_whitespace = false # Markdownは行末スペースに意味があるため除外
+
+[Makefile]
+indent_style = tab            # Makefileはタブ必須なので上書き

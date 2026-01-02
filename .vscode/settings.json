@@ -1,0 +1,12 @@
+{
+  // --- 全体設定 ---
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // --- Prettier の詳細設定 ---
+  "prettier.printWidth": 120, // 1行の最大文字数
+  "prettier.tabWidth": 2, // インデントの幅
+  "prettier.singleAttributePerLine": true, // 属性が複数ある場合に1行ずつに分ける
+  "prettier.bracketSameLine": false, // true にすると 閉じカッコ ">" を最後の属性と同じ行に置きます
+  "prettier.htmlWhitespaceSensitivity": "css"
+}
