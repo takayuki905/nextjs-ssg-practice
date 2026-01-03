@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -26,21 +27,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className="antialiased">
-        {/* 共通ヘッダー */}
-        <header className="p-4 bg-gray-100 border-b flex gap-6">
-          <Link href="/" className="font-bold hover:text-blue-600">
-            Home
-          </Link>
-          <Link href="/about" className="hover:text-blue-600">
-            About
-          </Link>
-          <Link href="/blog" className="hover:text-blue-600">
-            Blog
-          </Link>
-        </header>
-
-        {/* 各ページの中身 */}
+        <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
